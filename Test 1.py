@@ -1,7 +1,10 @@
-name = "Valentin"
-num1 = 9
-num2 = 2
-num3 = 7
-print(name)
-print(num1 + num2)
-print(num1 + num2 + num3)
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("https://www.livescore.com/en/")
+driver.maximize_window()
+
+print(driver.title)
+print(driver.current_url)
+
+driver.quit()
